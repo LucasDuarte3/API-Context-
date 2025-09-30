@@ -1,0 +1,30 @@
+### GET ALL PROJETOS
+GET https://localhost:7154/api/projetos
+Accept: application/json
+
+### GET PROJETO BY ID
+GET https://localhost:7154/api/projetos/1
+Accept: application/json
+
+### CREATE PROJETO
+POST https://localhost:7154/api/projetos
+Content-Type: application/json
+
+{
+  "nomeDoProjeto": "Projeto X - REST Client",
+  "area": "Educacao",
+  "status": true
+}
+
+### UPDATE PROJETO
+PUT https://localhost:7154/api/projetos/1
+Content-Type: application/json
+
+{
+  "nomeDoProjeto": "Projeto X - Atualizado",
+  "area": "Educacao Avancada",
+  "status": false
+}
+
+### DELETE PROJETO
+DELETE https://localhost:7154/api/projetos/1
