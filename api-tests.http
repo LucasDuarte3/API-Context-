@@ -28,3 +28,35 @@ Content-Type: application/json
 
 ### DELETE PROJETO
 DELETE https://localhost:7154/api/projetos/1
+
+
+### GET ALL USUARIOS
+GET https://localhost:7154/api/usuarios
+Accept: application/json
+
+### GET USUARIO BY ID
+GET https://localhost:7154/api/usuarios/1
+Accept: application/json
+
+### CREATE USUARIO
+POST https://localhost:7154/api/usuarios
+Content-Type: application/json
+
+{
+  "nome": "Lucas",
+  "email": "lucas@email.com",
+  "senha": "123456"
+}
+
+### UPDATE USUARIO
+PUT https://localhost:7154/api/usuarios/1
+Content-Type: application/json
+
+{
+  "nome": "Lucas Atualizado",
+  "email": "lucas123@email.com",
+  "senha": "novaSenha123"
+}
+
+### DELETE USUARIO
+DELETE https://localhost:7154/api/usuarios/1

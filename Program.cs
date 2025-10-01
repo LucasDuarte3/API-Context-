@@ -17,6 +17,9 @@ builder.Services.AddDbContext<ExoContext>(options =>
 // Registrar o repositório
 builder.Services.AddScoped<ProjetoRepository>();
 
+// Registrar o repositório de Usuário
+builder.Services.AddScoped<UsuarioRepository>();
+
 // Swagger para teste da API
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

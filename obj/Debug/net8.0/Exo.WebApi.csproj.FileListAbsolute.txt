@@ -226,3 +226,4 @@ C:\Users\lucas\Downloads\Atv3-Api\Exo.WebApi\obj\Debug\net8.0\refint\Exo.WebApi.
 C:\Users\lucas\Downloads\Atv3-Api\Exo.WebApi\obj\Debug\net8.0\Exo.WebApi.pdb
 C:\Users\lucas\Downloads\Atv3-Api\Exo.WebApi\obj\Debug\net8.0\Exo.WebApi.genruntimeconfig.cache
 C:\Users\lucas\Downloads\Atv3-Api\Exo.WebApi\obj\Debug\net8.0\ref\Exo.WebApi.dll
+C:\Users\lucas\Downloads\Atv3-Api\Exo.WebApi\obj\Debug\net8.0\Exo.WebApi.sourcelink.json

@@ -8,11 +8,11 @@ namespace Exo.WebApi.Contexts
         public ExoContext()
         {
         }
-        
+
         public ExoContext(DbContextOptions<ExoContext> options) : base(options)
         {
         }
-        
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -23,7 +23,8 @@ namespace Exo.WebApi.Contexts
                 );
             }
         }
-        
+
         public DbSet<Projeto> Projetos { get; set; } = null!;
+        public DbSet<Usuario> Usuarios { get; set; } = null!;
     }
 }
