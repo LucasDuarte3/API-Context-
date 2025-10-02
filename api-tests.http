@@ -1,3 +1,5 @@
+
+
 ### GET ALL PROJETOS
 GET https://localhost:7154/api/projetos
 Accept: application/json
@@ -29,34 +31,47 @@ Content-Type: application/json
 ### DELETE PROJETO
 DELETE https://localhost:7154/api/projetos/1
 
-
 ### GET ALL USUARIOS
 GET https://localhost:7154/api/usuarios
 Accept: application/json
 
+
 ### GET USUARIO BY ID
 GET https://localhost:7154/api/usuarios/1
 Accept: application/json
+
 
 ### CREATE USUARIO
 POST https://localhost:7154/api/usuarios
 Content-Type: application/json
 
 {
-  "nome": "Lucas",
-  "email": "lucas@email.com",
-  "senha": "123456"
+  "email": "lucassz3024@email.com",
+  "senha": "301424"
 }
 
-### UPDATE USUARIO
-PUT https://localhost:7154/api/usuarios/1
+
+### LOGIN (gera token JWT)
+POST https://localhost:7154/api/usuarios/login
 Content-Type: application/json
 
 {
-  "nome": "Lucas Atualizado",
-  "email": "lucas123@email.com",
+  "email": "lucassz3024@email.com",
+  "senha": "301424"
+}
+
+
+### UPDATE USUARIO (precisa do token)
+PUT https://localhost:7154/api/usuarios/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx1Y2Fzc3ozMDI0QGVtYWlsLmNvbSIsImp0aSI6IjE3IiwiZXhwIjoxNzU5NDQwMzU4LCJpc3MiOiJFeG8uV2ViQXBpIiwiYXVkIjoiRXhvLldlYkFwaSJ9.K0ShQp_Fvhd2b6aFmJdvskIGl25zq09XbWtWwtig6Ok
+
+{
+  "email": "lucaz123@email.com",
   "senha": "novaSenha123"
 }
 
-### DELETE USUARIO
+
+### DELETE USUARIO (precisa do token)
 DELETE https://localhost:7154/api/usuarios/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imx1Y2Fzc3ozMDI0QGVtYWlsLmNvbSIsImp0aSI6IjE3IiwiZXhwIjoxNzU5NDQwMzU4LCJpc3MiOiJFeG8uV2ViQXBpIiwiYXVkIjoiRXhvLldlYkFwaSJ9.K0ShQp_Fvhd2b6aFmJdvskIGl25zq09XbWtWwtig6Ok

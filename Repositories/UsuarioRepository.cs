@@ -52,5 +52,10 @@ namespace Exo.WebApi.Repositories
                 _context.SaveChanges();
             }
         }
+
+        public Usuario Login(string email, string senha)
+        {
+            return _context.Usuarios.FirstOrDefault(u => u.Email == email && u.Senha == senha);
+        }
     }
 }
